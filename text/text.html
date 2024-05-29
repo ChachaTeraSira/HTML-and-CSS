@@ -1,0 +1,90 @@
+<style>
+  /* since we have duplicate font-family setting, we can set the
+  same one for all the paragraphs existing */
+  p {
+    font-family: Arial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .video_title {
+    color: rgb(33, 37, 41);
+    /* font-family: Arial;changes font */
+    font-size: 18px;/*changes font size*/
+    font-weight: bold;/*makes font bold*/
+    /* font-style: italic;makes font italic */
+    /* text-align: center;centers the text */
+    width: 300px;/*forces the text to be only written in 
+    certain/desiginated area*/
+    line-height: 24px; /*changes the space between lines*/
+    margin-bottom: 4px;
+  }
+  .video_stats {
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    margin-bottom: 20px;
+  }
+  .video_author {
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    margin-bottom: 20px;
+  }
+  .video_description {
+    font-size: 14px;
+    width: 275px;
+    color: rgb(96, 96, 96);
+    line-height: 21px;
+
+    /* TODO - remove this*/ margin-bottom: 100px;
+  }
+
+  .apple_text {
+    margin-bottom: 50px;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(227, 65, 64);
+    text-align: center;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .text_span:hover {
+    text-decoration: underline; /*this underlines the whole text */
+    cursor: pointer;
+  }
+</style>
+<p class="video_title">
+  Talking Tech and AI with Google CEO Sundar Pichai!
+</p>
+
+<p class="video_stats"> 
+  3.4M views &#183; 6 months ago <!--this is called HTML entity,
+this is used to print special characters in html, search on google
+for every special character. this unique number is for dot in 
+the middle-->
+ </p>
+
+ <p class="video_author">
+  Marques Brownlee &#10003;
+</p>
+
+<p class="video_description">
+  Talking tech and AI on the heels of Google I/O. Also a
+  daily driver phone reveal from Google's CEO. Shoutout to Sundar!
+</p>
+
+<p class="apple_text">
+  Shop early for the best selection of holiday favourites.
+   <span class="text_span">Shop now &#62;</span>
+</p>
+<!-- <strong> LOL </strong> this will bold the word 'LOL' in the
+  sentence.
+  <u> Hello </u> this will underline the word 'Hello' in the 
+  sentence
+  <span> Yolo </span> the span element is most generic and has 
+  no styles. but we can always create a class in there
+  [<span class = "text_yolo">] (you can create class in other ones
+  too but its usually not that useful). This way we can style the
+  word Yolo however we want without affecting anything else in a
+  paragraph.
+-->
+
