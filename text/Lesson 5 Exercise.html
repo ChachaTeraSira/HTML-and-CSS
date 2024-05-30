@@ -1,4 +1,5 @@
 <!-- Text Styles practice [29/5/24] -->
+<!-- you can start a class name with a number/int -->
 
 <style>
     /* 5a. */
@@ -8,7 +9,7 @@
         font-size: 50px;
     }
     /* 5b. */
-    .common_font_5b {
+    .common_font_5b_5d {
         font-family: Arial;
     }
     .arial_font {
@@ -55,14 +56,38 @@
     .get_button:active {
         background-color: rgb(13, 112, 13);
     }
+    /* 5d. */
+    .alignment {
+        text-align: center;
+    }
+    .font_5d {
+        font-weight: bold;
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+    .font_5d_2 {
+        font-size: 24px;
+    }
+    .font_5d_3 {
+        font-size: 24px;
+        color: rgb(78, 78, 186);
+    }
+    .font_5d_3:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 </style>
 
 <!-- 5a. font = Tahoma -->
 <p class="tahoma_font">This is Tahoma font</p>
 
 <!-- 5b. font = Arial -->
-<p class="common_font_5b arial_font">Biggest Deals of the Year!</p>
-<p class="common_font_5b arial_font_2"><i>Sales end Tuesday</i></p>
+<p class="common_font_5b_5d arial_font">
+    Biggest Deals of the Year!
+</p>
+<p class="common_font_5b_5d arial_font_2">
+    <i>Sales end Tuesday</i>
+</p>
 
 <!-- We can make multiple classes, and each time we call any one
 of them, it will make the changes to the paragraph, like in this
@@ -80,3 +105,12 @@ differentiated by a space. -->
     become a develpor.
 </p>
 <button class="common_font_5c get_button">Get Started</button>
+
+<!-- 5d. font = Arial -->
+<p class="common_font_5b_5d font_5d alignment">
+    Shopping for your business?
+</p>
+<p class="common_font_5b_5d font_5d_2 alignment">
+    See how Apple at Work can help.
+</p>
+<p class="common_font_5b_5d font_5d_3 alignment">Learn more &gt;</p>
