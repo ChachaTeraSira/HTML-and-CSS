@@ -1,1 +1,82 @@
-<!-- Text Styles practice -->
+<!-- Text Styles practice [29/5/24] -->
+
+<style>
+    /* 5a. */
+    .tahoma_font {
+        font-family: tahoma;
+        font-weight: bold;
+        font-size: 50px;
+    }
+    /* 5b. */
+    .common_font_5b {
+        font-family: Arial;
+    }
+    .arial_font {
+        font-weight: bold;
+        font-size: 50px;
+        margin-bottom: 0px;
+    }
+    .arial_font_2 {
+        color: rgb(216, 41, 41);
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    /* 5c. */
+    .common_font_5c {
+        font-family: Verdana;
+    }
+    .verdana_font {
+        font-weight: bold;
+        font-size: 35px;
+        margin-bottom: 0px;
+    }
+    .verdana_font_2 {
+        font-size: 30px;
+        margin-bottom: 0px;
+        margin-top: 8px;
+        color: grey;
+    }
+    .verdana_font_3 {
+        font-size: 30px;
+        width: 550px;
+    }
+    .get_button {
+        color: white;
+        font-size: 25px;
+        background-color: rgb(17, 143, 17);
+        border-radius: 10px;
+        border: none;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+        cursor: pointer;
+    }
+    .get_button:active {
+        background-color: rgb(13, 112, 13);
+    }
+</style>
+
+<!-- 5a. font = Tahoma -->
+<p class="tahoma_font">This is Tahoma font</p>
+
+<!-- 5b. font = Arial -->
+<p class="common_font_5b arial_font">Biggest Deals of the Year!</p>
+<p class="common_font_5b arial_font_2"><i>Sales end Tuesday</i></p>
+
+<!-- We can make multiple classes, and each time we call any one
+of them, it will make the changes to the paragraph, like in this
+case, the common_font_5b class is only used to make the text in 
+Arial font for both of them, but the other class is used to change
+every other property. -->
+<!-- to create multiple classes we just add class name 
+differentiated by a space. -->
+
+<!-- 5c. font = Verdana -->
+<p class="common_font_5c verdana_font">HTML CSS Course</p>
+<p class="common_font_5c verdana_font_2">Beginner to Pro</p>
+<p class="common_font_5c verdana_font_3">
+    In this course, we'll learn the skills you need to 
+    become a develpor.
+</p>
+<button class="common_font_5c get_button">Get Started</button>
