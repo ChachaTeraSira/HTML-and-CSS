@@ -1,0 +1,34 @@
+.url{
+    color: rgb(0,113,133);
+  }
+  .url:hover{
+    color: rgb(183, 94, 10);
+  }
+  .para{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .price{
+    color: rgb(0,118,0);
+    font-weight: bold;
+  }
+  .Add{
+    background-color: rgb(255,216,20);
+    border: none;
+    font-size: 15px;
+    border-radius: 18px;
+    height: 27px;
+    width: 120px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  .Buy{
+    background-color: rgb(255,164,28);
+    border: none;
+    font-size: 15px;
+    border-radius: 18px;
+    height: 27px;
+    width: 120px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
