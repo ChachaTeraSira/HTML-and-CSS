@@ -1,0 +1,15 @@
+p {
+    text-align: center;
+    font-family: montserrat;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.top {
+    font-size: 90px;
+    font-weight: bold;
+}
+.bottom {
+    font-size: 40px;
+    margin-top: 15px;
+}
