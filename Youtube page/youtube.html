@@ -1,0 +1,43 @@
+<!-- <img>, <link> and <input> are example of void elements, which means they
+hold a starting/open tag but no end/close tag -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube Clone</title>
+    <style>
+      .thumbnail {
+        width: 300px; /*When setting width the height will adjust 
+        automatically to preserve the dimension of image*/
+        /* so if you use the height factor it will make the picture lose
+        it's proportion. */
+        /* object-fit: contain; /*this will give you the size you want up top
+        but will crop the image according to that.
+        The property cover, will crop the area to that user wanted 
+        according to the code (same as using "fill" property in 
+        windows background display)
+        If used contain property, adjust(fit) the picture into the 
+        area you provided in code (same as using "fit" property in 
+        windows background display)
+        */
+        /* object-position: left; /*using this you can display the part of 
+        image you want to show in the cropped area.*/
+      }
+      
+      .search_bar {
+        font-size: 20px;
+      }
+      
+    </style>
+  </head>
+   <body>
+    <img class="thumbnail" src="Thumbnails/410-Sidhu_Moosewala.webp">
+    <input class="search_bar" type="text" placeholder="Search">
+    <!-- 
+    => in input type you can get the input how we want, setting it
+    equal to text will make a search box.
+    using checkbox it will create a checkbox
+    => Placeholder- this will is the word that stays in a searchbox
+    until a user starts typing, just like how the word "Search" stays
+    in the searchbox of youtube.-->
+  </body>
+</html>
