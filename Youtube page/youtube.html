@@ -7,6 +7,7 @@ hold a starting/open tag but no end/close tag -->
     <style>
       .search_bar {
         font-size: 20px;
+        display: block;
       }
       .thumbnail {
         width: 300px; /*When setting width the height will adjust 
@@ -33,19 +34,24 @@ hold a starting/open tag but no end/close tag -->
       /* you can combine classes to give them same properties
       example, .author,.stats {color: black;}
       ^^ this will make text black for both the classes. */
-      .author {
         /*display: inline-block; this changes the block element
         to an inline-block element*/
         /* display: block; this will change the inline-block
-        element to block element */
-      }
-      .stats {
-      }
+        element to block element */  
+        .Sidhu_410 {
+          width: 300px; /*since we restricted the div/container to be
+          300px, even tho we have block elements that are suppose to
+           take all the line, they only cover 300px now, but they do
+           take up all the line inside of the div/container rather than
+           the whole page.*/
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 15px; 
+        }
     </style>
   </head>
    <body>
     <input class="search_bar" type="text" placeholder="Search">
-    <img class="thumbnail" src="Thumbnails/410-Sidhu_Moosewala.webp">
     <!-- 
     => in input type you can get the input how we want, setting it
     equal to text will make a search box.
@@ -62,12 +68,32 @@ hold a starting/open tag but no end/close tag -->
       inline element = just text element, appear within a line of 
       text (characters????) example: <strong>, <u>
     -->
-    <p class="video_title">
-      410 (OFFICIAL VIDEO) SIDHU MOOSE WALA | SUNNY MALTON |
-       Latest New Punjabi Songs 2024
-    </p>
-    <!-- changing block to inline block -->
-    <p class="author">Sunny Malton</p>
-    <p class="stats" >37M views &#183; 1 month ago</p>
+    <!-- <div> = division = just a box. Div is a block element
+      you can have other elements in <div>
+      <div> also = containers, basically a assigned or resevred 
+      block in a website -->
+
+      <!-- 410-Sidhu Moosewala [Container 1] -->
+      <div class="Sidhu_410">
+        <img class="thumbnail" src="Thumbnails/410-Sidhu_Moosewala.webp">
+        <p class="video_title">
+          410 (OFFICIAL VIDEO) SIDHU MOOSE WALA | SUNNY MALTON |
+           Latest New Punjabi Songs 2024
+        </p>
+        <!-- changing block to inline block -->
+        <p class="author">Sunny Malton</p>
+        <p class="stats" >37M views &#183; 1 month ago</p>
+      </div>
+
+      <!-- Drippy-Sidhu Moosewala [Container 2] -->
+      <div class="Sidhu_410">
+        <img class="thumbnail" src="Thumbnails/Drippy-Sidhu_Moosewala.webp">
+        <p class="video_title">
+          Drippy (Official Video) | Sidhu Moose Wala | Mxrci | AR Paisley
+        </p>
+        <!-- changing block to inline block -->
+        <p class="author">Sidhu Moose Wala</p>
+        <p class="stats" >58M views &#183; 4 month ago</p>
+      </div>
   </body>
 </html>
