@@ -23,6 +23,7 @@
   padding-left: 20px;
   padding-top: 0px;
   padding-bottom: 20px;
+  margin-bottom: 5px;
 }
 .para {
   font-family: arial;
@@ -32,4 +33,25 @@
   font-size: 23px;
   display: inline-block;
   margin-bottom: 15px;
+}
+/* 9d. Recreate this design using a <div> with 2 paragraph inside */
+.grey_block {
+  border-style: solid;
+  width: 400px;
+  border-width: 1px;
+  background-color: rgb(42, 42, 42);
+  padding-left: 20px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+.install {
+  color: white;
+  font-size: 30px;
+  font-family: arial;
+  margin-bottom: 0px;
+}
+.add {
+  color: rgb(168, 168, 168);
+  font-size: 17px;
+  font-family: arial;
 }
