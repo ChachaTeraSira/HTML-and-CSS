@@ -1,0 +1,35 @@
+/* 9a. Red block */
+.red_block {
+  background-color: rgb(255, 40, 40);
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+}
+/* 9b. Green Circle */
+.green_circle {
+  background-color: rgb(38, 197, 38);
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-bottom: 5px;
+}
+/* 9c. Recreate this design by wrapping the elements in a 
+  <div> and adding a border */
+.block {
+  border-style: solid;
+  width: 400px;
+  border-width: 1px;
+  border-color: rgb(178, 178, 178);
+  padding-left: 20px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+.para {
+  font-family: arial;
+  font-size: 25px;
+}
+.button {
+  font-size: 23px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
