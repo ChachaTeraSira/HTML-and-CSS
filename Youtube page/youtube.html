@@ -5,6 +5,9 @@ hold a starting/open tag but no end/close tag -->
   <head>
     <title>Youtube Clone</title>
     <style>
+      .search_bar {
+        font-size: 20px;
+      }
       .thumbnail {
         width: 300px; /*When setting width the height will adjust 
         automatically to preserve the dimension of image*/
@@ -21,17 +24,28 @@ hold a starting/open tag but no end/close tag -->
         */
         /* object-position: left; /*using this you can display the part of 
         image you want to show in the cropped area.*/
+        display: block;
       }
-      
-      .search_bar {
-        font-size: 20px;
+                 
+      .video_title {
+        width: 300px;
       }
-      
+      /* you can combine classes to give them same properties
+      example, .author,.stats {color: black;}
+      ^^ this will make text black for both the classes. */
+      .author {
+        /*display: inline-block; this changes the block element
+        to an inline-block element*/
+        /* display: block; this will change the inline-block
+        element to block element */
+      }
+      .stats {
+      }
     </style>
   </head>
    <body>
-    <img class="thumbnail" src="Thumbnails/410-Sidhu_Moosewala.webp">
     <input class="search_bar" type="text" placeholder="Search">
+    <img class="thumbnail" src="Thumbnails/410-Sidhu_Moosewala.webp">
     <!-- 
     => in input type you can get the input how we want, setting it
     equal to text will make a search box.
@@ -39,5 +53,21 @@ hold a starting/open tag but no end/close tag -->
     => Placeholder- this will is the word that stays in a searchbox
     until a user starts typing, just like how the word "Search" stays
     in the searchbox of youtube.-->
+    
+    <!-- HTML ELEMENTS
+      block element = takes the entire line | example: A paragraph
+       by default <p>
+      inline-block element = only takes up as much space as needed
+      | example: picture or searchbox
+      inline element = just text element, appear within a line of 
+      text (characters????) example: <strong>, <u>
+    -->
+    <p class="video_title">
+      410 (OFFICIAL VIDEO) SIDHU MOOSE WALA | SUNNY MALTON |
+       Latest New Punjabi Songs 2024
+    </p>
+    <!-- changing block to inline block -->
+    <p class="author">Sunny Malton</p>
+    <p class="stats" >37M views &#183; 1 month ago</p>
   </body>
 </html>
