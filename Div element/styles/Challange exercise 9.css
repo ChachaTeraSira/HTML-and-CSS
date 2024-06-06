@@ -45,6 +45,8 @@
   box-shadow: 0px 0px 10px grey;
   width: 200px;
   margin-bottom: 20px;
+  display: inline-block;
+  margin-right: 15px;
 }
 .profile_pic {
   width: 200px;
