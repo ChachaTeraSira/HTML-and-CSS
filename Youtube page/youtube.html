@@ -28,9 +28,9 @@ hold a starting/open tag but no end/close tag -->
         display: block;
       }
                  
-      .video_title {
+      /* .video_title {
         width: 300px;
-      }
+      } */
       /* you can combine classes to give them same properties
       example, .author,.stats {color: black;}
       ^^ this will make text black for both the classes. */
@@ -48,6 +48,15 @@ hold a starting/open tag but no end/close tag -->
           vertical-align: top;
           margin-right: 15px; 
         }
+        .channel_pfp {
+          display: inline-block;
+          width: 50px;
+        }
+        .video_info {
+          display: inline-block;
+          width: 200px;
+        }
+        .profile_picture
     </style>
   </head>
    <body>
@@ -75,14 +84,23 @@ hold a starting/open tag but no end/close tag -->
 
       <!-- 410-Sidhu Moosewala [Container 1] -->
       <div class="Sidhu_410">
-        <img class="thumbnail" src="Thumbnails/410-Sidhu_Moosewala.webp">
-        <p class="video_title">
-          410 (OFFICIAL VIDEO) SIDHU MOOSE WALA | SUNNY MALTON |
-           Latest New Punjabi Songs 2024
-        </p>
-        <!-- changing block to inline block -->
-        <p class="author">Sunny Malton</p>
-        <p class="stats" >37M views &#183; 1 month ago</p>
+        <div>
+          <img class="thumbnail" src="Thumbnails/410-Sidhu_Moosewala.webp">
+        </div>
+        <div>
+          <div class="channel_pfp">
+            <img class="profile_picture" src="Thumbnails/Channel-pfp/Sunny Malton pfp.jpg">
+          </div>
+          <div class="video_info">
+            <p class="video_title">
+              410 (OFFICIAL VIDEO) SIDHU MOOSE WALA | SUNNY MALTON |
+               Latest New Punjabi Songs 2024
+            </p>
+            <!-- changing block to inline block -->
+            <p class="author">Sunny Malton</p>
+            <p class="stats" >37M views &#183; 1 month ago</p>
+          </div> 
+        </div> 
       </div>
 
       <!-- Drippy-Sidhu Moosewala [Container 2] -->
