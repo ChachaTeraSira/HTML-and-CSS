@@ -4,7 +4,15 @@ hold a starting/open tag but no end/close tag -->
 <html>
   <head>
     <title>Youtube Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <style>
+      p {
+        font-family: Roboto, Arial;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
       .search_bar {
         font-size: 20px;
         display: block;
@@ -28,9 +36,22 @@ hold a starting/open tag but no end/close tag -->
         display: block;
       }
                  
-      /* .video_title {
-        width: 300px;
-      } */
+      .video_title {
+        /* width: 300px; */
+        margin-top: 0px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-bottom: 12px;
+      }
+      .video_author, 
+      .video_stats {
+        font-size: 12px;
+        color: rgb(96, 96, 96);
+      }
+      .video_author {
+        margin-bottom: 4px;
+      }
       /* you can combine classes to give them same properties
       example, .author,.stats {color: black;}
       ^^ this will make text black for both the classes. */
@@ -51,12 +72,21 @@ hold a starting/open tag but no end/close tag -->
         .channel_pfp {
           display: inline-block;
           width: 50px;
+          vertical-align: top;
         }
         .video_info {
           display: inline-block;
           width: 200px;
         }
-        .profile_picture
+        .profile_picture {
+          width: 38px;
+          /* width: 100%; percentage means it will cover 100% of the
+          div container that it lies in, in our case which is 50px*/
+          border-radius: 50px;
+        }
+        .thumbnail_row {
+          margin-bottom: 12px;
+        }
     </style>
   </head>
    <body>
@@ -84,12 +114,12 @@ hold a starting/open tag but no end/close tag -->
 
       <!-- 410-Sidhu Moosewala [Container 1] -->
       <div class="Sidhu_410">
-        <div>
+        <div class="thumbnail_row">
           <img class="thumbnail" src="Thumbnails/410-Sidhu_Moosewala.webp">
         </div>
         <div>
           <div class="channel_pfp">
-            <img class="profile_picture" src="Thumbnails/Channel-pfp/Sunny Malton pfp.jpg">
+            <img class="profile_picture" src="Thumbnails/Channel-pfp/SMW pfp.jpg">
           </div>
           <div class="video_info">
             <p class="video_title">
@@ -97,8 +127,8 @@ hold a starting/open tag but no end/close tag -->
                Latest New Punjabi Songs 2024
             </p>
             <!-- changing block to inline block -->
-            <p class="author">Sunny Malton</p>
-            <p class="stats" >37M views &#183; 1 month ago</p>
+            <p class="video_author">Sunny Malton</p>
+            <p class="video_stats" >37M views &#183; 1 month ago</p>
           </div> 
         </div> 
       </div>
