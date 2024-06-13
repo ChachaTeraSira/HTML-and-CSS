@@ -5,12 +5,33 @@
     <style>
       p {
         font-family: arial;
+        margin-top: 0px;
+        margin-bottom: 0px;
       }
       .thumbnail {
         display: inline-block;
       }
       .video_description {
         display: inline-block;
+        vertical-align: top;
+        margin-left: 10px;
+      }
+      .video_title {
+        font-weight: bold;
+        font-size: 30px;
+        width: 500px;
+        line-height: 35px;
+        margin-top: 5px;
+      }
+      .video_author {
+        color: rgb(96,96,96);
+        margin-top: 20px;
+        font-size: 20px;
+      }
+      .video_stats {
+        color: rgb(96,96,96);
+        margin-top: 13px;
+        font-size: 20px;
       }
     </style>
   </head>
@@ -20,16 +41,17 @@
     <div>
       <img class="thumbnail" src="thumbnails/self-taught.webp">
       <div class="video_description">
-        <p>
+        <p class="video_title">
           How to compete against CS degrees (as a self-taught dev)
         </p>
-        <p>SuperSimpleDev</p>
-        <p>1.5K views &#183; 4 months ago</p>
+        <p class="video_author">SuperSimpleDev</p>
+        <p class="video_stats">1.5K views &#183; 4 months ago</p>
       </div>
     </div>
     <div>
       <img src="thumbnails/which lang.webp">
     </div>
+    
     <div>
       <img src="thumbnails/front-end.webp">
     </div>
