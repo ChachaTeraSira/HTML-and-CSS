@@ -1,12 +1,42 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Grid practice</title>
-  </head>
-  <body>
-    <div>
-      <div style="background-color: lightblue;">Div 1</div>
-      <div style="background-color: lightpink;">Div 2</div>
-    </div>
-  </body>
-</html>
+  <!-- grid is basically a table -->
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Grid practice</title>
+    </head>
+    <body>
+      <div style="
+        display: grid;
+        grid-template-columns: 100px 100px;
+        grid-template-rows: ;
+        ">
+        <div style="background-color: lightblue;">Div 1</div>
+        <div style="background-color: lightpink;">
+          Div 2
+          <p>text</p>
+        </div>
+      </div>
+
+
+      <div style="
+      margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 100px 200px;
+        ">
+        <div style="background-color: lightblue;">100px</div>
+        <div style="background-color: lightpink;">
+          100px
+          <p>text</p>
+        </div>
+        <div style="background-color: lightblue;">200px</div>
+        <div style="background-color: lightpink;">100px</div>
+      </div>
+    </body>
+  </html>
+  <!-- 
+  - You dont have space empty white space between the columns 
+  and rows of a grid.
+  - Grids are aligned to eachother by default
+  - When you have more elements than colums built, the elements will
+  start to wrap around to next line.
+    -->
