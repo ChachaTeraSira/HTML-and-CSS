@@ -18,7 +18,7 @@ hold a starting/open tag but no end/close tag -->
         display: block;
       }
       .thumbnail {
-        width: 300px; /*When setting width the height will adjust 
+        width: 100%; /*When setting width the height will adjust 
         automatically to preserve the dimension of image*/
         /* so if you use the height factor it will make the picture lose
         it's proportion. */
@@ -33,7 +33,6 @@ hold a starting/open tag but no end/close tag -->
         */
         /* object-position: left; /*using this you can display the part of 
         image you want to show in the cropped area.*/
-        display: block;
       }
                  
       .video_title {
@@ -60,24 +59,21 @@ hold a starting/open tag but no end/close tag -->
         /* display: block; this will change the inline-block
         element to block element */  
         .video_preview {
-          width: 300px; /*since we restricted the div/container to be
+          /* width: 300px; since we restricted the div/container to be
           300px, even tho we have block elements that are suppose to
            take all the line, they only cover 300px now, but they do
            take up all the line inside of the div/container rather than
            the whole page.*/
-          display: inline-block;
-          vertical-align: top;
-          margin-right: 15px; 
         }
         .video_info_grid {
           display: grid;
           grid-template-columns: 50px 1fr;
         }
         .channel_pfp {
-          background-color: grey;
+
         }
         .video_info {
-          background-color: grey;
+
         }
         .profile_picture {
           width: 38px;
@@ -87,6 +83,12 @@ hold a starting/open tag but no end/close tag -->
         }
         .thumbnail_row {
           margin-bottom: 12px;
+        }
+        .video_grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          column-gap: 16px;
+          row-gap: 40px;
         }
     </style>
   </head>
@@ -113,6 +115,7 @@ hold a starting/open tag but no end/close tag -->
       <div> also = containers, basically a assigned or resevred 
       block in a website -->
 
+    <div class="video_grid">
       <!-- 410-Sidhu Moosewala [Container 1] -->
       <div class="video_preview">
         <div class="thumbnail_row">
@@ -234,7 +237,9 @@ hold a starting/open tag but no end/close tag -->
         </div>
       </div>
 
-      <!-- Gol Dastaare [Container 3] -->
+
+    </div>
+      <!-- Gol Dastaare [Container 3]
       <div class="video_preview">
         <div class="thumbnail_row">
         <img class="thumbnail" src="Thumbnails/Gol Dastaare.webp">
@@ -247,11 +252,12 @@ hold a starting/open tag but no end/close tag -->
             <p class="video_title">
               Gol Dastaare
             </p>
-            <!-- changing block to inline block -->
             <p class="video_author">Jagowala Jatha</p>
             <p class="video_stats" >2.2M views &#183; 4 years ago</p>
           </div>
         </div>
-      </div>
+      </div> -->
+
+      
   </body>
 </html>
